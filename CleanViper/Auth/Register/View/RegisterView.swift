@@ -67,10 +67,11 @@ class UserView : UIViewController, RegisterView{
         }
     }
     func updateUser(with users: [User]) {
-        
+        print("user")
         DispatchQueue.main.async {
-            self.users = []
+            self.users = users
             self.tableView.reloadData()
+            self.labelListStatus.isHidden = true
             self.tableView.isHidden = false
         }
     }
