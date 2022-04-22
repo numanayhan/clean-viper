@@ -36,7 +36,7 @@ class UserPresenter: RegisterPresenter{
         case .success(let user):
             view?.updateUser(with: user)
         case .failure:
-            view?.updateUser(with: "Error" )
+            view?.updateUser(with: "Error")
         }
     }
     
